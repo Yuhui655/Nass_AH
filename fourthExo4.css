@@ -1,0 +1,249 @@
+/* !GENERAL RULES-1 ********************************************/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#container{
+    border: 6px solid black;
+    width: 100%;
+    height: 100vh;
+    padding-top: 1%;
+}
+
+/* !GENERAL RULES-2 ********************************************/
+#wrapper {
+    /* border: 2px solid red; */
+    width: 95%;
+    height: 95%;
+    margin: auto;
+    padding: 0.9% 5px 0.9% 5px;
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgray;
+}
+#main {
+    /* border: 1px solid yellow; */
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#shoppingList {
+    /* border: 1px solid lightseagreen; */
+    width: 18%;
+    height: 88.6%;
+    display: flex;
+    flex-direction: column;
+}
+#navBar, #footer, #shoppingList, #shoppingList-hidden{
+    background-color: white;
+}
+/* !GENERAL RULES-3 ********************************************/
+#navBar, #footer{
+    align-items: center;
+}
+
+.nav, .footer{
+    list-style-type: none;
+}
+.nav li, .footer li{
+    /* border: 1px solid khaki; */
+    display: inline-block;
+    padding: 0 5px 0 5px;
+}
+#logo, #logo-bottom {
+    /* border: 1px solid black; */
+    /* padding-left: 5px; */
+    margin-left: 5px;
+}
+#links-top,
+#links-bottom {
+    /* border: 2px solid green; */
+    margin-right: 5px;
+}
+#wellcomeMessage h1 {
+    color: white;
+}
+
+/*! GAUCHE BLOC **********************************************/
+/* NAVBAR ****************************************************/
+#navBar{
+    /* border: 6px solid lightseagreen; */
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+/* IMAGE ****************************************************/
+#imageBloc{
+    /* border: 1px solid coral; */
+    width: 100%;
+    height: 80%;
+    margin: 1% 0 1% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*! DROITE BLOC ***********************************************/
+#wellcomeMessage {
+    /* border: 4px solid black; */
+    width: 100%;
+/*?QD #wellcomeMessage a <width=64%> **********************/
+    /* width: 64%; */
+    height: 100%;
+    background-image: url("https://a-h-exos-integration.netlify.app/images/responsive-piscine.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titleShopping {
+    /* border: 2px solid greenyellow; */
+    width: 98%;
+    height: 20%;
+    text-align: right;
+    font-size: smaller;
+    padding-top: 20%;
+}
+.titleShopping h3 {
+    padding-right: 5px;
+}
+#listShopping {
+    /* border: 1px solid goldenrod; */
+    width: 40%;
+    height: 80%;
+    margin-left: auto;
+    padding-top: 20%;
+}
+#listShopping .list li {
+    /* border: 1px solid goldenrod; */
+    list-style-position: inside;
+    font-size: 12px;
+    font-weight: bold;
+}
+/**⏫MÊME CHOSE⏬ <list li> & <#listShopping ol li>⏫⏬
+/** #listShopping ol li {
+/** color: brown;
+/** list-style-position: inside;
+/**}
+/*?QD #wellcomeMessage a <width=64%> **********************/
+#shoppingList-hidden {
+    /* border: 2px solid lightseagreen; */
+    width: 35%;
+    height: 100%;
+    display: none;
+}
+#listShopping-hidden {
+    /* border: 1px solid red; */
+    width: 16%;
+    height: 48%;
+    margin-left: auto;
+    padding-top: 20%;
+}
+#listShopping-hidden .list li {
+    /* border: 1px solid goldenrod; */
+    list-style-position: inside;
+    font-size: 12px;
+    font-weight: bold;
+}
+/* FOOTER ****************************************************/
+#footer{
+    /* border: 6px solid blueviolet; */
+    width: 60%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+}
+/*! TABLETTE *****************************************************/
+@media(max-width:1050px){
+    #wellcomeMessage{
+        width: 64%;
+    }
+    #shoppingList {
+        display: none;
+    }
+    #main{
+        width: 100%;
+    }
+    #shoppingList-hidden{
+        display: inline-block;
+    }
+}
+/*! MOBILE *******************************************************/
+@media (max-width:376px){
+    #wrapper {
+        border: 3px solid pink;
+        height: 98%;
+        background-image: url("https://a-h-exos-integration.netlify.app/images/responsive-piscine.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    #navBar, #footer {
+        /* border: 2px solid lightseagreen; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 5px 0 5px 0;
+        margin: 8% auto;
+    }
+    .nav li, .footer li {
+        /* border: 3px solid khaki; */
+        display: inline-block;
+        font-size: 12px;
+    }
+    .logo {
+        /* border: 1px solid red; */
+        font-size: 20px;
+    }
+    .logo-bottom{
+        font-size: 13px;
+    }
+    #imageBloc {
+        /* border: 6px solid coral; */
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    #wellcomeMessage{
+        /* border: 4px solid firebrick; */
+        background-image: none;
+        border: 4px solid white;
+        width: 97.8%;
+        height: 66%;
+        /* margin: 0; */
+    }
+    #wellcomeMessage h1{
+        /* border: 2px solid black; */
+        text-align: center;
+        font-size: 55px;
+        color: white;
+    }
+    #shoppingList-hidden{
+        /* border: 1px solid firebrick; */
+        width: 100%;
+        height: 24%;
+        /* padding-right: 0; */
+        /* margin-right: 0; */
+    }
+    .titleShopping {
+        /* border: 1px solid fuchsia; */
+        width: 98%;
+        text-align: center;
+        padding-top: 5px;
+    }
+    #listShopping-hidden {
+        /* border: 1px solid firebrick; */
+        width: 20%;
+        padding-top: 5px;
+        margin: auto;
+    }
+    .hidden{
+        display: none;
+    }   
+}
+
+

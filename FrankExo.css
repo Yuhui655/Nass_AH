@@ -1,0 +1,92 @@
+/* ! LAYOUT CSS *****************************/
+body,
+p {
+    margin: 0;
+}
+
+#container {
+    border: 4px solid blue;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#profil-panel {
+    border: 4px solid khaki;
+    min-width: 200px;
+}
+
+#feed-panel {
+    border: 4px solid brown;
+    min-width: 760px;
+}
+
+#right-panel {
+    border: 4px solid lightseagreen;
+    min-width: 240px;
+}
+
+@media (max-width:1200px) {
+    #breakpoint {
+        flex-direction: column;
+    }
+
+    #profil-panel,
+    #ads {
+        display: none;
+    }
+}
+
+/* ! STYLE CSS ******************************/
+header {
+    background-color: lightcoral;
+    height: 80px;
+}
+
+p {
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+    color: ivory;
+}
+
+#identity {
+    background-color: lightgrey;
+    height: 100px;
+}
+
+#community {
+    background-color: lightpink;
+    height: 200px;
+}
+
+#feed-entry {
+    background-color: lightseagreen;
+    height: 60px;
+}
+
+main {
+    background-color: magenta;
+    height: 800px;
+}
+
+#news {
+    background-color: mistyrose;
+    height: 200px;
+}
+
+#ads {
+    background-color: navajowhite;
+    height: 200px;
+}
+
+footer {
+    background-color: orange;
+    height: 200px;
+}
+
+@media (max-width:1200px) {
+    p {
+        color: black;
+    }
+}

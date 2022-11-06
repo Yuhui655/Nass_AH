@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+}
+#container{
+    border: 4px solid black;
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    background-color: lightcyan;
+}
+#wrapper{
+    border: 6px solid yellow;
+    background-color: lightcyan;
+    width: 100%;
+    height: 75%;
+    margin: auto;
+    display:flex;
+    justify-content: space-between ;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+#left{
+    /* border: 4px solid red; */
+    width: 79%;
+    height: 100%;
+}
+
+#navBar{
+    /* border: 4px solid lightgray; */
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 79%;
+    height: 7%;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+#logo, #logo-bottom{
+    /* border: 4px solid black;  */
+    padding-left: 5px;
+}
+#links-top {
+    /* border: 4px solid lightblue; */
+    /* padding: 10px; */
+}
+
+.nav{
+    /* border: 3px solid yellowgreen; */
+    list-style-type: none;
+
+    
+}
+.nav li {
+    /* border: 2px solid blue; */
+    display: inline-block;
+    /* font-size: 20px; */
+    padding: 0 5px 0 5px;
+    
+}
+/* !2e **************************************************/
+#container-image-swimmingpool{
+    /* border: 2px solid pink; */
+        width: 100%;
+        height: 100%;
+        background-image: url("https://a-h-exos-integration.netlify.app/images/responsive-piscine.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+/* #image-swimmingpool{
+    border: 4px solid blue;
+    width: 100%;
+    height: 85%;
+} */
+#right {
+    border: 4px solid lightseagreen;
+    background-color: white;
+    width: 15%;
+    height: 100%;
+    display: inline;
+    text-align: right; 
+}
+
+.shopping-list p {
+    /* border: 2px solid yellowgreen; */
+    font-weight: bolder;
+    /* display: inline-block;
+    text-align: right; */
+}
+
+.shopping-list{
+    /* border: 4px solid black; */
+    display: inline-block;
+    text-align: right;
+    margin-top: 20%;
+}
+
+/* #title-shopping-list{
+    border: 1px solid green;
+    text-align: right;
+} */
+.list{
+    border: 4px solid coral;
+    text-align: left;
+}
+.list li{
+    border: 2px solid yellowgreen;
+    /* display: block;s */
+}
+/* !FOOTER **************************************************/
+#footer-container{
+    background-color: lightcyan;
+    /* border: 4px solid coral; */
+    width: 80%;
+    /* height: 7%; */
+    margin-top: 1%;
+    margin-left: 1%;
+}
+#footer{
+    /* border: 2px solid blueviolet; */
+    width: 79%;
+    height: 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    background-color: white;
+    margin-bottom: 1%;
+    padding: 5px 5px 5px 5px;
+}
+#links-bottom {
+    /* border: 2px solid lightblue; */
+}
+
+.footer {
+    /* border: 1px solid yellowgreen; */
+    list-style-type: none;
+}
+
+.footer li {
+    /* border: 2px solid blue; */
+    display: inline;
+    padding: 0 5px 0 5px;
+}
